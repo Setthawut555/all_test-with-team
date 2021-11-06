@@ -1,0 +1,83 @@
+body, html {
+    margin:0;
+    height: 100%;
+  }
+  
+.bg {
+    /* The image used */
+    background-image: url("img/sea.JPG");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid #000000;
+}
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+
+
+.left-size {
+    display: flex;
+}
+.right-size {
+    display: flex;
+}
+.nav-wrapper > .left-size > div {
+    margin-right: 10px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+.nav-wrapper > .right-size > div {
+    margin-right: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+.var-link-wrapper {
+    height: 1px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+/* left */
+.var-link-wrapper a {
+    color: #767daa;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.var-link-wrapper :hover{
+    border-bottom: 1px solid rgb(6, 21, 230);
+}
+
+.var-link-wrapper a:hover{
+    color:rgb(6, 21, 230);
+}
+
+/* right */
+.brand a {
+    color: #ff0000;
+    text-decoration: none;
+    border-bottom: 1px solid #ff0000;
+    transition: color 0.2s;
+}
+
+.brand :hover{
+    border-bottom: 1px solid rgb(18, 20, 110);
+}
+
+.brand a:hover{
+    color:rgb(18, 20, 110);
+}
